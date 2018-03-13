@@ -121,6 +121,18 @@ architecture rtl of top is
   );
   end component;
   
+
+	COMPONENT reg
+	PORT(
+		i_clk  : IN  std_logic;
+		in_rst : IN  std_logic;
+		i_d    : IN  std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+		o_q    : OUT std_logic_vector(MEM_ADDR_WIDTH-1 downto 0)
+	);
+	END COMPONENT;
+			
+	
+  
   
   constant update_period     : std_logic_vector(31 downto 0) := conv_std_logic_vector(1, 32);
   
@@ -168,11 +180,11 @@ begin
   graphics_lenght <= conv_std_logic_vector(MEM_SIZE*8*8, GRAPH_MEM_ADDR_WIDTH);
   
   -- removed to inputs pin
-  direct_mode <= '1';
-  display_mode     <= "10";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
+  direct_mode <= '0'; -- 1 je za boje, 0 text mode
+  display_mode     <= "01";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
   
   font_size        <= x"1";
-  show_frame       <= '1';
+  show_frame       <= '0'; -- 0 - text mode, 1 - graphics mode
   foreground_color <= x"FFFFFF";
   background_color <= x"000000";
   frame_color      <= x"FF0000";
@@ -246,15 +258,90 @@ begin
     blue_o             => blue_o     
   );
   
+  i_reg: reg PORT MAP(
+		i_clk  => pix_clock_s,
+		in_rst => rst_n_i,
+		i_d => char_address_next,   
+		o_q => char_address
+	);	
+  
   -- na osnovu signala iz vga_top modula dir_pixel_column i dir_pixel_row realizovati logiku koja genereise
   --dir_red
   --dir_green
   --dir_blue
+  
+   dir_red <= 
+				"00000000" when dir_pixel_column <= 80 else --bela
+				"11111111" when (dir_pixel_column >= 80 and dir_pixel_column <= 160) else --NE TREBA BOJA
+				"00000000" when (dir_pixel_column >= 160 and dir_pixel_column <= 240) else --NE TREBA BOJA
+				"11111111" when (dir_pixel_column >= 240 and dir_pixel_column <= 320) else --NE TREBA BOJA
+				"00000000" when (dir_pixel_column >= 320 and dir_pixel_column <= 400) else --ljubicasta
+				"11111111" when (dir_pixel_column >= 400 and dir_pixel_column <= 480) else --crvena
+				"00000000"; --crna
+				
+  dir_green <=
+				"00000000" when dir_pixel_column <= 80 else --bela
+				"00000000" when (dir_pixel_column >= 80 and dir_pixel_column <= 160) else --zuta
+				"11111111" when (dir_pixel_column >= 160 and dir_pixel_column <= 240) else --svetlo plava
+				"11111111" when (dir_pixel_column >= 240 and dir_pixel_column <= 320) else --NE TREBA BOJA
+				"00000000" when (dir_pixel_column >= 320 and dir_pixel_column <= 400) else --ljubicasta
+				"00000000" when (dir_pixel_column >= 480 and dir_pixel_column <= 560) else --plava
+				"11111111"; --crna
+ 
+
+			--	"00000000" when dir_pixel_column <= 80 else --bela
+			--	"00001111" when (dir_pixel_column >= 80 and dir_pixel_column <= 160) else --zuta
+			--	"00001111" when (dir_pixel_column >= 240 and dir_pixel_column <= 320) else --svetlo zelena
+			--	"11111111"; --crna
+  
+  dir_blue <= 
+				"00000000" when dir_pixel_column <= 80 else --bela
+				"00000000" when (dir_pixel_column >= 80 and dir_pixel_column <= 160) else --zuta
+				"00000000" when (dir_pixel_column >= 160 and dir_pixel_column <= 240) else --svetlo plava
+				"00000000" when (dir_pixel_column >= 240 and dir_pixel_column <= 320) else --NE TREBA BOJA
+				"11111111" when (dir_pixel_column >= 320 and dir_pixel_column <= 400) else --ljubicasta
+				"11111111" when (dir_pixel_column >= 480 and dir_pixel_column <= 560) else --plava
+				"11111111"; --crna
  
   -- koristeci signale realizovati logiku koja pise po TXT_MEM
   --char_address
   --char_value
   --char_we
+  
+  -- text mode:
+  -- direct_mode <= '0';
+  -- display_mode <= "01";
+  -- show_frame <= '0';
+  
+  char_we <= "1";
+  char_address <= x"12"; -- 10 + 1 + 7
+	
+  char_address <= 
+						char_address_next + 1 when char_we = "1" and char_address_next < "0001001011000000" else -- 0001001011000000 = 4800    		
+						(others = '0');
+
+char_value <= 
+					x"1" when char_address = "0" else  -- a
+					x"C" when char_address = "1" else  -- l
+					x"5" when char_address = "2" else  -- e
+					x"B" when char_address = "3" else  -- k
+					x"13" when char_address = "4" else -- s
+					x"1" when char_address = "5" else  -- a
+					x"E" when char_address = "6" else  -- n
+					x"4" when char_address = "7" else  -- d
+					x"1" when char_address = "8" else  -- a
+					x"12" when char_address = "9" else -- r
+					x"20" when char_address = "10" else -- razmak 					
+					x"C" when char_address = "11" else  -- l
+					x"1" when char_address = "12" else  -- a
+					x"1A" when char_address = "13" else  -- z
+					x"F" when char_address = "14" else  -- 0
+					x"16" when char_address = "15" else -- v
+					x"9" when char_address = "16" else  -- i
+					x"3" when char_address = "17" else  -- c
+					x"20";
+  
+  
   
   -- koristeci signale realizovati logiku koja pise po GRAPH_MEM
   --pixel_address
