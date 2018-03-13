@@ -5,61 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 263: &lt;<arg fmt="%s" index="1">rst_n_i</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="837" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 319: Type <arg fmt="%s" index="1">std_logic</arg> does not match with a string literal
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 264: &lt;<arg fmt="%s" index="1">char_address_next</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 323: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
 </msg>
 
-<msg type="error" file="HDLCompiler" num="837" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 316: Type <arg fmt="%s" index="1">std_logic</arg> does not match with a string literal
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 320: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 320: &lt;<arg fmt="%s" index="1">char_address_next</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 326: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 327: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 328: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 329: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 330: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 331: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 332: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 333: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 336: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 337: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 338: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 339: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 340: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 341: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 39: Unit &lt;<arg fmt="%s" index="1">rtl</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

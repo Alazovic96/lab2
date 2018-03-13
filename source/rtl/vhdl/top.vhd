@@ -168,6 +168,9 @@ architecture rtl of top is
   signal dir_blue            : std_logic_vector(7 downto 0);
   signal dir_pixel_column    : std_logic_vector(10 downto 0);
   signal dir_pixel_row       : std_logic_vector(10 downto 0);
+  
+  signal char_address_next   : std_logic_vector(13 downto 0);
+  
 
 begin
 
@@ -260,7 +263,7 @@ begin
   
   i_reg: reg PORT MAP(
 		i_clk  => pix_clock_s,
-		in_rst => rst_n_i,
+		in_rst => reset_n_i,
 		i_d => char_address_next,   
 		o_q => char_address
 	);	
@@ -317,28 +320,28 @@ begin
   char_address <= x"12"; -- 10 + 1 + 7
 	
   char_address <= 
-						char_address_next + 1 when char_we = "1" and char_address_next < "0001001011000000" else -- 0001001011000000 = 4800    		
-						(others => '0');
+						char_address_next + 1 when char_we = 1 and char_address_next < "0001001011000000" else -- 0001001011000000 = 4800    		
+						(others => "0");
 
 char_value <= 
-					x"1" when char_address = "0" else  -- a
-					x"C" when char_address = "1" else  -- l
-					x"5" when char_address = "2" else  -- e
-					x"B" when char_address = "3" else  -- k
-					x"13" when char_address = "4" else -- s
-					x"1" when char_address = "5" else  -- a
-					x"E" when char_address = "6" else  -- n
-					x"4" when char_address = "7" else  -- d
-					x"1" when char_address = "8" else  -- a
-					x"12" when char_address = "9" else -- r
-					x"20" when char_address = "10" else -- razmak 					
-					x"C" when char_address = "11" else  -- l
-					x"1" when char_address = "12" else  -- a
-					x"1A" when char_address = "13" else  -- z
-					x"F" when char_address = "14" else  -- 0
-					x"16" when char_address = "15" else -- v
-					x"9" when char_address = "16" else  -- i
-					x"3" when char_address = "17" else  -- c
+					x"1" when char_address = 0 else  -- a
+					x"C" when char_address = 1 else  -- l
+					x"5" when char_address = 2 else  -- e
+					x"B" when char_address = 3 else  -- k
+					x"13" when char_address = 4 else -- s
+					x"1" when char_address = 5 else  -- a
+					x"E" when char_address = 6 else  -- n
+					x"4" when char_address = 7 else  -- d
+					x"1" when char_address = 8 else  -- a
+					x"12" when char_address = 9 else -- r
+					x"20" when char_address = 10 else -- razmak 					
+					x"C" when char_address = 11 else  -- l
+					x"1" when char_address = 12 else  -- a
+					x"1A" when char_address = 13 else  -- z
+					x"F" when char_address = 14 else  -- 0
+					x"16" when char_address = 15 else -- v
+					x"9" when char_address = 16 else  -- i
+					x"3" when char_address = 17 else  -- c
 					x"20";
   
   
