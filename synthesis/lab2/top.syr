@@ -141,13 +141,15 @@ Parsing architecture <Behavioral> of entity <char_rom>.
 Parsing VHDL file "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\vga_top.vhd" into library work
 Parsing entity <vga_top>.
 Parsing architecture <rtl> of entity <vga_top>.
+Parsing VHDL file "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\reg.vhd" into library work
+Parsing entity <reg>.
+Parsing architecture <arch_reg> of entity <reg>.
 Parsing VHDL file "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <rtl> of entity <top>.
 ERROR:HDLCompiler:69 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 263: <rst_n_i> is not declared.
 ERROR:HDLCompiler:69 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 264: <char_address_next> is not declared.
 ERROR:HDLCompiler:837 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 316: Type std_logic does not match with a string literal
-ERROR:HDLCompiler:806 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 321: Syntax error near "=".
 ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 320: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
 ERROR:HDLCompiler:69 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 320: <char_address_next> is not declared.
 ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 326: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
@@ -163,10 +165,11 @@ ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 3
 ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 338: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
 ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 339: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
 ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 340: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
+ERROR:HDLCompiler:1731 - "D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 341: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
 Sorry, too many errors..
 --> 
 
-Total memory usage is 219056 kilobytes
+Total memory usage is 218992 kilobytes
 
 Number of errors   :   19 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

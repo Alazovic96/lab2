@@ -318,7 +318,7 @@ begin
 	
   char_address <= 
 						char_address_next + 1 when char_we = "1" and char_address_next < "0001001011000000" else -- 0001001011000000 = 4800    		
-						(others = '0');
+						(others => '0');
 
 char_value <= 
 					x"1" when char_address = "0" else  -- a

@@ -14,9 +14,6 @@
 <msg type="error" file="HDLCompiler" num="837" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 316: Type <arg fmt="%s" index="1">std_logic</arg> does not match with a string literal
 </msg>
 
-<msg type="error" file="HDLCompiler" num="806" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 321: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
-</msg>
-
 <msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 320: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
 </msg>
 
@@ -60,6 +57,9 @@
 </msg>
 
 <msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 340: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 341: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
 </msg>
 
 </messages>
