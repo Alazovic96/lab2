@@ -7,7 +7,7 @@ use ieee.std_logic_arith.all;
 
 entity reg is
 	generic(
-		WIDTH    : positive := 1;
+		WIDTH    : positive := 14;
 		RST_INIT : integer := 0
 	);
 	port(

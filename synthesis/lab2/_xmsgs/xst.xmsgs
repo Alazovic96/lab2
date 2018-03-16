@@ -5,13 +5,87 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="837" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 319: Type <arg fmt="%s" index="1">std_logic</arg> does not match with a string literal
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 179: Assignment to <arg fmt="%s" index="1">message_lenght</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="error" file="HDLCompiler" num="1731" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 323: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 184: Assignment to <arg fmt="%s" index="1">graphics_lenght</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="error" file="HDLCompiler" num="854" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 39: Unit &lt;<arg fmt="%s" index="1">rtl</arg>&gt; ignored due to previous errors.
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 106: &lt;<arg fmt="%s" index="1">oddr2</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\vga.vhd" Line 123: &lt;<arg fmt="%s" index="1">srl16</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\vga_top.vhd" Line 301: Assignment to <arg fmt="%s" index="1">grid_size</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 159: Net &lt;<arg fmt="%s" index="1">pixel_address[19]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 160: Net &lt;<arg fmt="%s" index="1">pixel_value[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd" Line 161: Net &lt;<arg fmt="%s" index="1">pixel_we</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd</arg>&quot; line <arg fmt="%s" index="2">215</arg>: Output port &lt;<arg fmt="%s" index="3">dir_pixel_row_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">vga_top_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\top.vhd</arg>&quot; line <arg fmt="%s" index="2">215</arg>: Output port &lt;<arg fmt="%s" index="3">vga_rst_n_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">vga_top_i</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pixel_address</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pixel_value</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">pixel_we</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\RA2-2015\LPRS2\lab2\source\rtl\vhdl\vga_top.vhd</arg>&quot; line <arg fmt="%d" index="2">251</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">graphics_mem_i</arg>&gt; of block &lt;<arg fmt="%s" index="4">graphics_mem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_top</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">wr_addr_i&lt;13:13&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset_n_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">text_mem</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset_n_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">graphics_mem</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">B6</arg> in unit <arg fmt="%s" index="2">char_rom_def</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_text_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0216</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">red_r_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_sync</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;red_r_1&gt; &lt;red_r_2&gt; &lt;red_r_3&gt; &lt;red_r_4&gt; &lt;red_r_5&gt; &lt;red_r_6&gt; &lt;red_r_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">green_r_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_sync</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;green_r_1&gt; &lt;green_r_2&gt; &lt;green_r_3&gt; &lt;green_r_4&gt; &lt;green_r_5&gt; &lt;green_r_6&gt; &lt;green_r_7&gt; &lt;blue_r_0&gt; &lt;blue_r_1&gt; &lt;blue_r_2&gt; &lt;blue_r_3&gt; &lt;blue_r_4&gt; &lt;blue_r_5&gt; &lt;blue_r_6&gt; &lt;blue_r_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i_reg/r_q_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga_top_i/vga_i/vga_sync_i/h_count_r_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga_top_i/vga_i/vga_sync_i/v_count_r_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_top_i/vga_i/vga_sync_i/green_r_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_top_i/vga_i/vga_sync_i/red_r_0&gt; </arg>
 </msg>
 
 </messages>
